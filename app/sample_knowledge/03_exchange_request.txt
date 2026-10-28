@@ -1,0 +1,5 @@
+ServicePilot 虚构电商平台 DEMO：换货申请规则（原创示例资料）
+换货申请类型为 exchange_request。DEMO 仅允许 shipped、completed 状态的订单申请换货；pending_payment、paid 和 cancelled 状态不允许申请。不能额外猜测商品品类、库存或物流导致的限制。
+客户提交自己的订单号、申请类型和1至2000字符的问题描述。prepare_ticket 只准备申请，页面“确认提交”按钮才触发工单创建。点击取消不会创建工单。
+同一用户、订单及申请类型不能同时有两张未结束工单。pending_review、approved、in_progress 均算未结束；rejected、resolved、cancelled 为结束状态，重新申请仍需通过当前资格校验。
+知识库不能读取订单实时状态，也不能批准工单、执行实际换货或承诺库存。审核批准仅表示申请获准，实际履约不在 DEMO 范围内。

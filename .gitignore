@@ -1,0 +1,57 @@
+# Local environment variables and credentials
+.env
+.env.*
+*.env
+!/app/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*
+secrets*
+.aws/
+.streamlit/secrets.toml
+
+# Python environments and generated caches
+.venv/
+.venv-business/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local editor settings
+.idea/
+.vscode/
+
+# Logs and local application state
+logs/
+*.log
+chroma_db/
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.db
+*.db-*
+chat_history/
+md5.txt
+md5.text
+
+# Local knowledge documents and external/user records are kept on disk only
+data/
+
+# Build and OS artifacts
+build/
+dist/
+*.egg-info/
+.DS_Store
+Thumbs.db

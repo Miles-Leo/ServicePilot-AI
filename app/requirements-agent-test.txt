@@ -1,0 +1,5 @@
+-r requirements-business.txt
+# Match the existing Python 3.13 Agent environment; do not upgrade that environment.
+langchain==1.4.2
+langchain-core==1.6.12
+langgraph==1.2.12

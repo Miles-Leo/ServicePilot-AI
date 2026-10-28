@@ -1,0 +1,4 @@
+ServicePilot 虚构电商平台 DEMO：订单状态说明（原创示例资料）
+本文仅解释演示规则，不包含真实客户或实时订单。具体订单状态、归属、金额和售后资格必须调用 get_order 查询，以数据库与业务服务校验为准。
+pending_payment 表示待支付，paid 表示已支付，shipped 表示已发货，completed 表示已完成，cancelled 表示已取消。状态名称用于演示，不代表已接入真实支付或物流系统。
+DEMO 用户 A 的 DEMO-AFTERSALE-A 初始为 completed，用户 B 的 DEMO-AFTERSALE-B 初始为 shipped。两个原始 DEMO-ORDER-A/B 初始为 pending_payment。已有本地数据可能变化，知识库不能确认它们当前的实时状态。

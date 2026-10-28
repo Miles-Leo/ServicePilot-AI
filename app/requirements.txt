@@ -1,0 +1,32 @@
+# Full ServicePilot application and offline test dependencies.
+# Recommended: CPython 3.13.9 (Windows runtime and test baseline).
+# Python 3.12 is the database-layer minimum, not a fully validated app target.
+# Install into a fresh venv: python -m pip install -r requirements.txt
+# Direct dependencies and deliberate compatibility pins only; not pip freeze.
+
+# UI
+streamlit==1.65.0
+
+# Agent APIs: keep aligned with requirements-agent-test.txt.
+langchain==1.4.2
+langchain-core==1.6.12
+langgraph==1.2.12
+langchain-community==0.4.2
+langchain-openai==1.7.2
+
+# RAG adapters, vector database, text/PDF loading and model provider.
+langchain-chroma==1.1.0
+langchain-text-splitters==1.1.2
+chromadb==1.5.9
+dashscope==1.27.7
+pypdf==6.20.0
+
+# Persistence, configuration and tool input validation.
+# SQLAlchemy uses the existing 413-test environment's version.
+SQLAlchemy==2.1.6
+PyYAML==6.0.3
+pydantic==2.13.5
+
+# Offline tests import requests exception types directly.
+pytest==9.1.1
+requests==2.34.2

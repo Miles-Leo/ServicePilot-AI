@@ -1,0 +1,4 @@
+ServicePilot 虚构电商平台 DEMO：退货申请规则（原创示例资料）
+退货申请类型为 return_request。当前 DEMO 业务允许 paid、shipped、completed 状态的订单申请退货；pending_payment 和 cancelled 状态不允许申请。这里没有配置退货天数限制，也不能据此推断真实平台政策。
+客户需提供自己的订单号和问题描述。Agent 通过 prepare_ticket 准备草稿，准备成功不等于创建工单。客户必须在页面点击“确认提交”，后端重新校验后才能创建 pending_review 工单。
+知识库只说明规则。归属、状态、允许的类型与有效工单冲突以工具和数据库校验为准。申请获得批准也不代表退款已执行；DEMO 不执行退款或退货物流。
